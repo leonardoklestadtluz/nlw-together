@@ -33,6 +33,7 @@ html {
 
 /* Corpo da página */
 body {
+    display: flex;
     height: 100vh;
     background: var(--background);
 }
