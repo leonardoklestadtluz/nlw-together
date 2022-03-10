@@ -17,7 +17,7 @@ body, button, input, textarea {
 html {
     --black: #0D114F;
     --white: #FAFAFA;
-    --red: #E83FB5;
+    --red: #e83f5B;
     --light-blue: #E0ECFF;
     --blue: #3485FF;
     --background: #F6FAFF;
@@ -27,6 +27,7 @@ html {
     --gray-dark: #4d5e77;
     --gray-blue: #A1B2CD;
     --gray-light: #E5EAF1;
+    --gray-medium: #EAECF2;
 
     font-size: 62.5%;
 }
@@ -81,7 +82,7 @@ button:hover, .button:hover {
     filter: brightness(1.2);
 }
 
-button > img .button > img {
+button > img, .button > img {
     margin-right: 1rem;
     width: 2rem;
 }
@@ -93,6 +94,17 @@ button.outlined,
     border: .2rem solid var(--blue);
 }
 
+button.red, .button.red {
+    background: var(--red);
+    color: var(--white);
+}
+
+button.gray, .button.gray {
+    background: var(--gray-light);
+    color: var(--gray-dark);
+}
+
+/* Header */
 .content header {
     width: 80%;
     margin: 3.5rem auto;
