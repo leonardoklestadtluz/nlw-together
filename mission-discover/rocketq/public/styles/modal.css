@@ -1,3 +1,8 @@
+.modal-wrapper.active {
+    visibility: visible;
+    opacity: 1;
+}
+
 .modal-wrapper {
     position: fixed;
     width: 100vw;
@@ -7,6 +12,10 @@
     display: flex;
 
     background: rgba(4, 9, 17, 0.8);
+
+    /* Esconde o modal */
+    visibility: hidden;
+    opacity: 0;
 }
 
 .modal-wrapper .modal {
